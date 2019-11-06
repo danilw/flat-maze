@@ -2,7 +2,7 @@
 
 **what is it** game-demo to [particle collision logic](https://github.com/danilw/godot-utils-and-other/tree/master/particle_self_collision/mini_example) that use more complex collision rules.
 
-Full game logic are on GPU.
+Full game logic on GPU.
 
 ### Graphic from opengameart.org, [list of all used assets](https://github.com/danilw/flat-maze/blob/master/SOURCE_OF_GRAPHIC.md)
 
