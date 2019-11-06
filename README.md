@@ -19,8 +19,7 @@ else {
 		image_format = Image::FORMAT_RGBAF;
 	}
 ```
-**Second** file `drivers/gles3/shaders/canvas.glsl`
-**everything(lowp and meduim) to highp**
+**Second** file `drivers/gles3/shaders/canvas.glsl` **everything(lowp and meduim) to highp**
 
 Full game logic on GPU. More info about gameplay on itch.io links below     
 
