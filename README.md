@@ -6,7 +6,7 @@ This game use more complex collision rules.
 
 **Web version(live):** [danilw.itch.io/flat-maze-web](https://danilw.itch.io/flat-maze-web)
 
-**Playable version(binary):** [danilw.itch.io/flat-maze](https://danilw.itch.io/flat-maze)
+**Playable version(exe):** [danilw.itch.io/flat-maze](https://danilw.itch.io/flat-maze)
 
 **Building:**
 
