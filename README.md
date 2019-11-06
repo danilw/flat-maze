@@ -6,7 +6,7 @@
 
 To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support, edit source code files (lines base on godot-3.1.1-stable source version)
 
-1. file `drivers/gles3/rasterizer_storage_gles3.cpp` line 6856, else from this 
+**First** file `drivers/gles3/rasterizer_storage_gles3.cpp` line 6856, else from this 
 ```
 if (rt->flags[RENDER_TARGET_NO_3D_EFFECTS] && !rt->flags[RENDER_TARGET_TRANSPARENT])....
 ```
@@ -19,7 +19,7 @@ else {
 		image_format = Image::FORMAT_RGBAF;
 	}
 ```
-2. file `drivers/gles3/shaders/canvas.glsl`
+**Second** file `drivers/gles3/shaders/canvas.glsl`
 **everything(lowp and meduim) to highp**
 
 Full game logic on GPU. More info about gameplay on itch.io links below     
