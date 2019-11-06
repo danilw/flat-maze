@@ -1,4 +1,4 @@
-# e-ani
+# flat-maze
 
 **what is it** game-demo to [particle collision logic](https://github.com/danilw/godot-utils-and-other/tree/master/particle_self_collision/mini_example) that use more complex collision rules.
 
