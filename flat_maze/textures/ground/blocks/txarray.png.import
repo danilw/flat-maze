@@ -1,0 +1,24 @@
+[remap]
+
+importer="texture_array"
+type="TextureArray"
+path="res://.import/txarray.png-9aaebbf29800701d3125e938b103b4e9.texarr"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://textures/ground/blocks/txarray.png"
+dest_files=[ "res://.import/txarray.png-9aaebbf29800701d3125e938b103b4e9.texarr" ]
+
+[params]
+
+compress/mode=0
+compress/no_bptc_if_rgb=false
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=true
+flags/srgb=2
+slices/horizontal=4
+slices/vertical=4

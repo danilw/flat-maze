@@ -1,0 +1,24 @@
+[remap]
+
+importer="texture_array"
+type="TextureArray"
+path="res://.import/anim_ghost2.png-1314a4c6554bcd36ac7cc1698445a2ee.texarr"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://textures/monsters/anim_ghost2.png"
+dest_files=[ "res://.import/anim_ghost2.png-1314a4c6554bcd36ac7cc1698445a2ee.texarr" ]
+
+[params]
+
+compress/mode=0
+compress/no_bptc_if_rgb=false
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=true
+flags/srgb=2
+slices/horizontal=3
+slices/vertical=5
