@@ -1,6 +1,12 @@
 # flat-maze
 
-**what is it** game-demo to [particle collision logic](https://github.com/danilw/godot-utils-and-other/tree/master/particle_self_collision/mini_example) that use more complex collision rules.
+**what is it** game-demo to [particle collision logic](https://github.com/danilw/godot-utils-and-other). Example of basic logic used in this project https://www.shadertoy.com/view/tstSz7
+
+This game use more complex collision rules.
+
+**Web version(live):** [danilw.itch.io/flat-maze-web](https://danilw.itch.io/flat-maze-web)
+
+**Playable version(binary):** [danilw.itch.io/flat-maze](https://danilw.itch.io/flat-maze)
 
 **Building:**
 
@@ -24,11 +30,6 @@ else {
 Full game logic on GPU. More info about gameplay on itch.io links below     
 
 ### Graphic from opengameart.org, [list of all used assets](https://github.com/danilw/flat-maze/blob/master/SOURCE_OF_GRAPHIC.md)
-
-**Web version(live):** [danilw.itch.io/flat-maze-web](https://danilw.itch.io/flat-maze-web)
-
-**Playable version(binary):** [danilw.itch.io/flat-maze](https://danilw.itch.io/flat-maze)
-
 
 ### Contact: [**Join discord server**](https://discord.gg/JKyqWgt)
 
