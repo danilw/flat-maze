@@ -1,6 +1,6 @@
 # flat-maze
 
-**what is it** game-demo to [particle collision logic](https://github.com/danilw/godot-utils-and-other). Example of basic logic used in this project https://www.shadertoy.com/view/tstSz7
+**what is it** game-demo to [particle collision logic](https://github.com/danilw/godot-utils-and-other). Example of basic logic used in this project [shadertoy link](https://www.shadertoy.com/view/tstSz7).
 
 This game use more complex collision rules.
 
