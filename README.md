@@ -13,10 +13,16 @@ ___
 
 To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support, edit source code files (lines base on godot-3.1.1-stable source version)
 
-**First** file `drivers/gles3/rasterizer_storage_gles3.cpp` line 6856, else from this 
+**First** file `drivers/gles3/rasterizer_storage_gles3.cpp` in Godot 3.1 line 6856, else from this 
 ```
 if (rt->flags[RENDER_TARGET_NO_3D_EFFECTS] && !rt->flags[RENDER_TARGET_TRANSPARENT])....
 ```
+
+in Godot 3.2.1 line 7072
+```
+if (!hdr || rt->flags[RENDER_TARGET_NO_3D]) ...
+```
+
 **change to this** (replacing GL_RGBA16F etc)
 ```
 else {
