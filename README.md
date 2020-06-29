@@ -18,7 +18,7 @@ To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support
 if (rt->flags[RENDER_TARGET_NO_3D_EFFECTS] && !rt->flags[RENDER_TARGET_TRANSPARENT])....
 ```
 
-in Godot 3.2.1 line 7072
+in **Godot 3.2.1** line 7072, in **Godot 3.2.2** line 7118
 ```
 if (!hdr || rt->flags[RENDER_TARGET_NO_3D]) ...
 ```
