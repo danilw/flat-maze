@@ -11,7 +11,7 @@ ___
 
 **Building:**
 
-To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support, edit source code files (lines base on godot-3.1.1-stable source version)
+To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support, edit source code files:
 
 **First** file `drivers/gles3/rasterizer_storage_gles3.cpp`
 ___
