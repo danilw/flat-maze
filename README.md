@@ -17,6 +17,7 @@ To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support
 ```
 if (rt->flags[RENDER_TARGET_NO_3D_EFFECTS] && !rt->flags[RENDER_TARGET_TRANSPARENT])....
 ```
+___
 
 in **Godot 3.2.1** line 7072, in **Godot 3.2.2** line 7118
 ```
@@ -32,7 +33,30 @@ else {
 		image_format = Image::FORMAT_RGBAF;
 	}
 ```
+___
+
+in **Godot 3.3.2** line 7248 last else from this
+
+```
+if (!hdr || rt->flags[RENDER_TARGET_NO_3D]) ...
+```
+
+**change to this** (line 7264) (replacing GL_RGBA16F etc)
+
+```
+else {
+		color_internal_format = GL_RGBA32F;
+		color_format = GL_RGBA;
+		color_type = GL_HALF_FLOAT;
+		image_format = Image::FORMAT_RGBAF;
+	}
+```
+
+___
+
+
 **Second** file `drivers/gles3/shaders/canvas.glsl` **everything(lowp and mediump) to highp**
+___
 
 Full game logic on GPU. More info about gameplay on itch.io links below     
 
