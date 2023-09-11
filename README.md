@@ -9,45 +9,11 @@ This game use more complex collision rules.
 **Playable version(exe):** [danilw.itch.io/flat-maze](https://danilw.itch.io/flat-maze)
 ___
 
-**Building:**
+**Update 2023** - updated to Godot 3.5.2, because it has native fp32 support for viewports, this will work without modifications to Godot engine.
 
-To make it work you need rebuild(recompile) godot with adding GL_RGBA32F support, edit source code files:
+*Previous before this change [Godot 3.1 to 3.3 build this project source link](https://github.com/danilw/flat-maze/tree/294adbda84b0b74574afd1f2989fa07c928daed1).*
 
-**First** file `drivers/gles3/rasterizer_storage_gles3.cpp`
-___
-
-in **Godot 3.1** line 6856, else from this 
-```
-if (rt->flags[RENDER_TARGET_NO_3D_EFFECTS] && !rt->flags[RENDER_TARGET_TRANSPARENT])....
-```
-___
-
-in **Godot 3.2.1** line 7072, in **Godot 3.2.2** line 7118 last else from this 
-```
-if (!hdr || rt->flags[RENDER_TARGET_NO_3D]) ...
-```
-___
-
-in **Godot 3.3.2** line 7248 last else from this (line 7264)
-
-```
-if (!hdr || rt->flags[RENDER_TARGET_NO_3D]) ...
-```
-___
-
-**change to this** (replacing GL_RGBA16F etc)
-
-```
-else {
-		color_internal_format = GL_RGBA32F;
-		color_format = GL_RGBA;
-		color_type = GL_HALF_FLOAT;
-		image_format = Image::FORMAT_RGBAF;
-	}
-```
-___
-
-**Second** file `drivers/gles3/shaders/canvas.glsl` **everything(lowp and mediump) to highp**
+Playable versions not updated, because web-export template of Godot 3.5 work only on 2022+ webbrowsers, and native version had no errors/problems originally.
 ___
 
 Full game logic on GPU. More info about gameplay on itch.io links below     
