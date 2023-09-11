@@ -103,6 +103,7 @@ margin_top = 622.0
 margin_right = 1197.0
 margin_bottom = 701.0
 rect_rotation = -30.0
+
 [connection signal="mouse_entered" from="menu/Control/b1" to="menu" method="_on_b1_mouse_entered"]
 [connection signal="mouse_exited" from="menu/Control/b1" to="menu" method="_on_b1_mouse_exited"]
 [connection signal="pressed" from="menu/Control/b1" to="menu" method="_on_b1_pressed"]

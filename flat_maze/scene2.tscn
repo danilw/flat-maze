@@ -257,6 +257,10 @@ shader_param/logic = SubResource( 31 )
 [sub_resource type="ImageTexture" id=33]
 size = Vector2( 1280, 720 )
 
+[sub_resource type="DynamicFont" id=39]
+size = 45
+font_data = ExtResource( 47 )
+
 [sub_resource type="StyleBoxFlat" id=34]
 bg_color = Color( 0.309804, 0.352941, 0.490196, 0.545098 )
 
@@ -270,10 +274,6 @@ bg_color = Color( 0.309804, 0.352941, 0.490196, 0.545098 )
 
 [sub_resource type="StyleBoxFlat" id=38]
 bg_color = Color( 0.309804, 0.352941, 0.490196, 0.239216 )
-
-[sub_resource type="DynamicFont" id=39]
-size = 45
-font_data = ExtResource( 47 )
 
 [sub_resource type="DynamicFont" id=40]
 size = 60
@@ -297,6 +297,7 @@ script = ExtResource( 1 )
 [node name="logic" type="Viewport" parent="."]
 size = Vector2( 10, 2 )
 transparent_bg = true
+use_32_bpc_depth = true
 disable_3d = true
 render_target_v_flip = true
 render_target_update_mode = 3
@@ -310,6 +311,7 @@ script = ExtResource( 3 )
 [node name="logic_buf" type="Viewport" parent="."]
 size = Vector2( 10, 2 )
 transparent_bg = true
+use_32_bpc_depth = true
 disable_3d = true
 render_target_v_flip = true
 render_target_update_mode = 3
@@ -322,6 +324,7 @@ centered = false
 [node name="force_collision_map" type="Viewport" parent="."]
 size = Vector2( 1280, 720 )
 transparent_bg = true
+use_32_bpc_depth = true
 disable_3d = true
 render_target_v_flip = true
 render_target_update_mode = 3
@@ -335,6 +338,7 @@ script = ExtResource( 5 )
 [node name="particles" type="Viewport" parent="."]
 size = Vector2( 1280, 720 )
 transparent_bg = true
+use_32_bpc_depth = true
 disable_3d = true
 render_target_v_flip = true
 render_target_update_mode = 3
@@ -346,9 +350,9 @@ centered = false
 script = ExtResource( 9 )
 
 [node name="particles_buf" type="Viewport" parent="."]
-editor/display_folded = true
 size = Vector2( 1280, 720 )
 transparent_bg = true
+use_32_bpc_depth = true
 disable_3d = true
 render_target_v_flip = true
 render_target_update_mode = 3
@@ -429,12 +433,12 @@ margin_left = -120.0
 margin_top = 50.0
 margin_right = 118.0
 margin_bottom = 119.0
+custom_fonts/font = SubResource( 39 )
 custom_styles/hover = SubResource( 34 )
 custom_styles/pressed = SubResource( 35 )
 custom_styles/focus = SubResource( 36 )
 custom_styles/disabled = SubResource( 37 )
 custom_styles/normal = SubResource( 38 )
-custom_fonts/font = SubResource( 39 )
 text = "Restart"
 
 [node name="back" type="Button" parent="endgame/Control"]
@@ -446,12 +450,12 @@ margin_left = -120.0
 margin_top = 148.219
 margin_right = 118.0
 margin_bottom = 217.219
+custom_fonts/font = SubResource( 39 )
 custom_styles/hover = SubResource( 34 )
 custom_styles/pressed = SubResource( 35 )
 custom_styles/focus = SubResource( 36 )
 custom_styles/disabled = SubResource( 37 )
 custom_styles/normal = SubResource( 38 )
-custom_fonts/font = SubResource( 39 )
 text = "back"
 
 [node name="Label" type="Label" parent="endgame/Control"]
@@ -471,9 +475,9 @@ margin_left = 299.441
 margin_top = 646.32
 margin_right = 748.441
 margin_bottom = 736.32
-custom_fonts/font = ExtResource( 48 )
 custom_colors/font_color = Color( 0.694118, 0.694118, 0.694118, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 48 )
 text = "Twitter: 
 https://twitter.com/AruGL"
 
@@ -484,6 +488,7 @@ margin_top = -5.67303
 margin_right = 1033.71
 margin_bottom = 234.327
 texture_normal = SubResource( 42 )
+
 [connection signal="pressed" from="endgame/Control/restart" to="endgame/Control" method="_on_restart_pressed"]
 [connection signal="pressed" from="endgame/Control/back" to="endgame/Control" method="_on_back_pressed"]
 [connection signal="pressed" from="endgame/Control/gbb" to="endgame/Control" method="_on_gbb_pressed"]
