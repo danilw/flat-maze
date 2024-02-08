@@ -7,6 +7,11 @@ This game use more complex collision rules.
 **Web version(live):** [danilw.itch.io/flat-maze-web](https://danilw.itch.io/flat-maze-web)
 
 **Playable version(exe):** [danilw.itch.io/flat-maze](https://danilw.itch.io/flat-maze)
+
+___
+
+New blog post with description of this logic - [**Particle interaction on GPU shaders, particle-physics logic in WebGL/compute**](https://arugl.medium.com/particle-interaction-on-gpu-shaders-particle-physics-logic-in-webgl-compute-dc31a4e7b9cc). github [*mirror blog post*](https://danilw.github.io/blog/Particle_interaction_on_GPU_shaders_particle_physics/).
+
 ___
 
 **Update 2023** - updated to Godot 3.5.2, because it has native fp32 support for viewports, this will work without modifications to Godot engine.
