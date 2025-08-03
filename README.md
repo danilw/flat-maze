@@ -25,7 +25,13 @@ Full game logic on GPU. More info about gameplay on itch.io links below
 
 ### Graphic from opengameart.org, [list of all used assets](https://github.com/danilw/flat-maze/blob/master/SOURCE_OF_GRAPHIC.md)
 
-### Contact: [**Join discord server**](https://discord.gg/JKyqWgt)
+___
+
+### Contact with me:
+
+**Matrix-chat room `#Shadertoy:envs.net` invite link** [matrix.to](https://matrix.to/#/#Shadertoy:envs.net) *(use web UI Element if you dont have acc)*
+
+___
 
 ### Video:
 
